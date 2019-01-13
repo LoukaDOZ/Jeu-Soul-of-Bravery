@@ -1,0 +1,58 @@
+body 
+{
+color: black;
+background-color:white;
+background-image: url("../images/dragonwall.jpg");
+background-position:center center;
+background-attachment:fixed;
+background-repeat: no-repeat;
+text-align: center;
+}
+
+h1
+{
+text-align: center;
+color : white
+}
+
+.tuer
+{
+text-align: center;
+color: rgb(175,0,0);
+}
+
+p
+{
+color : white
+}
+
+h3
+{
+color : white
+}
+
+h4
+{
+color : white
+}
+
+.lien
+{
+   position:fixed;
+   background: black;
+   height:70px;
+   top:0;
+   left:0;
+   right:0;
+   font-size : 20px;
+}
+
+.tds
+{
+color: white;
+font-size : 20px;
+}
+
+table {
+	border-spacing: 50px 0px ;
+}
