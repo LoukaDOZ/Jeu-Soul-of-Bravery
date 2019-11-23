@@ -28,14 +28,15 @@ var timery2=0;					//Ordonnée du 2eme timer
 var timery3=0;					//Ordonnée du 3eme timer
 var cote=0;						//Variable qui choisi le coté de l'attaque lors du tour 4 et qui choisi la direction de la barre lors de l'attaque du joueur
 var score=0;					//variable qui compte le ,ombre de dégats subis
+var path="images/";					//Chemin vers les images
 
 // La fonction preload() est appelée une fois avant l'appel à setup() : elle permet de charger des images
 function preload() {
-  img_coeur = loadImage("../jeu/images/heart.png");
-  img_dragon = loadImage("../jeu/images/dragon.png");
-  img_flamme = loadImage("../jeu/images/1.png");
-  img_griffe = loadImage("../jeu/images/griffure.png");
-  img_casse = loadImage("../jeu/images/heart broken.png");
+  img_coeur = loadImage(path+"heart.png");
+  img_dragon = loadImage(path+"dragon.png");
+  img_flamme = loadImage(path+"1.png");
+  img_griffe = loadImage(path+"griffure.png");
+  img_casse = loadImage(path+"heart broken.png");
 }
 
 // La fonction setup() est appelée une fois, au début de l'exécution de script.js
@@ -48,7 +49,6 @@ function setup(){
   d=floor(random(660,1450));					// Tirage au hasard de l'abscisse d'une flamme
   e=floor(random(660,1450));					// Tirage au hasard de l'abscisse d'une flamme
   f=floor(random(660,1450));					// Tirage au hasard de l'abscisse d'une flamme
-
   
 }
 
@@ -530,7 +530,7 @@ if (tour=='A2'){						//Quand le joeur clique sur fight
 	text('Temps', 400, 650);			//Afficher "temps" a coté de la barre du timer
 	if(timery==200){					//Si le temps pour attaquer atteint 0
 		timery=0;						//Timer remis a 0
-		tour='T2';						//Au tour du dragon
+		tour='T4';						//Au tour du dragon
 	}
 	
 	 if (cote==0){						//Si le coté=0
@@ -589,7 +589,7 @@ if (tour=='A2'){						//Quand le joeur clique sur fight
 	text('Temps', 400, 650);			//Afficher "temps" a coté de la barre du timer
 	if(timery==200){					//Si le temps pour attaquer atteint 0
 		timery=0;						//Timer remis a 0
-		tour='T2';						//Au tour du dragon
+		tour='T6';						//Au tour du dragon
 	}
 	
 	 if (cote==0){						//Si le coté=0
