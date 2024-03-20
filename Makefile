@@ -8,4 +8,4 @@ stop:
 	docker stop soul_of_bravery_app
 
 clean:
-	docker rmi soul_of_bravery_app
+	docker rmi soul_of_bravery
