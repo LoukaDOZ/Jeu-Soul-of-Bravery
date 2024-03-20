@@ -9,6 +9,7 @@ JavaScript game made during IT and Digital Science specialization in high school
 | `make build` | Build Docker container |
 | `make start` | Start app              |
 | `make stop`  | Stop app               |
+| `make clean` | Clean docker image     |
 
 Project is accessible at : http://localhost/. It may be necessary to zoom out of the web page.
 
